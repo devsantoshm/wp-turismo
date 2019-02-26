@@ -1,3 +1,9 @@
-<?php 
-echo "desde page.php";
-?>
+<!-- http://localhost/wp-turismo/pagina-ejemplo/ 
+Traendo el header.php-->
+
+<?php get_header(); ?>
+
+<?php while(have_posts()): the_post();?>
+	<?php the_title(); ?>
+	<?php the_content(); ?>
+<?php endwhile; ?>
