@@ -14,9 +14,10 @@
 		<div class="container">
 			<h1 class="site-title">
 				<!-- name, description estan en Ajustes, generales -->
-				<a href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
+				<a href="<?php echo esc_url( home_url('/') ); ?>">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg">
+				</a>
 			</h1>
-			<h2 class="site-description"><?php bloginfo('description'); ?></h2>
 		</div>
 	</header>
 
