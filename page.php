@@ -1,5 +1,3 @@
-<!-- http://localhost/wp-turismo/pagina-ejemplo/ 
-Traendo el header.php-->
 
 <?php get_header(); ?>
 
