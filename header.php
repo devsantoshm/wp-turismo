@@ -13,12 +13,18 @@
 <div id="page">
 	<header id="masthead" class="site-header">
 		<div class="container">
-			<h1 class="site-title">
+			<div class="logo">
 				<!-- name, description estan en Ajustes, generales -->
 				<a href="<?php echo esc_url( home_url('/') ); ?>">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg">
 				</a>
-			</h1>
+			</div>
+			<nav id="site-navigation" class="main-navigation">
+				<!-- si creamos otro menu, tenemos que especificar el nombre del menu creado -->
+				<?php wp_nav_menu(array('theme_location' => 'menu_principal')); ?>
+			</nav>
+			<!-- limpiar floats con clear -->
+			<div class="clear"></div>
 		</div>
 	</header>
 
