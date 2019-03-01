@@ -1,12 +1,22 @@
 
 <?php get_header(); ?>
 
-<div id="primary" class="primary">
-	<?php while(have_posts()): the_post();?>
-		<?php the_title(); ?>
+<?php while(have_posts()): the_post();?>
+
+	<?php if(has_post_thumbnail()): ?>
+		<div class="destacada">
+			<?php the_post_thumbnail('destacada'); // Mostrar imagen seleccionada del post en wp-admin ?>
+			<h2><?php the_title(); ?></h2>
+		</div>
+	<?php else: ?>
+		<h2 class="noimagen"><?php the_title(); ?></h2>
+	<?php endif; ?>
+
+	<div id="primary" class="primary">
 		<?php the_content(); ?>
-	<?php endwhile; ?>
-</div>
+	</div>
+	
+<?php endwhile; ?>
 
 <?php get_sidebar(); ?>
 

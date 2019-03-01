@@ -11,6 +11,10 @@ register_nav_menus( array(
 	'menu_principal' => __('Menu Principal', 'turismoWP')
 ) );
 
+//Activar la opción de subir imagen en el post de wp-admin 
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'destacada', 1100, 418, true ); //true para recortar la imagen
+
 
 //quitar el margin-top de la barra de menu en el frontend al loguear en wp-admin
 add_filter( 'show_admin_bar', '__return_false' );
