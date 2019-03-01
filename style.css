@@ -80,6 +80,25 @@ h2.noimagen{
 	padding-bottom: 30px;
 	border: 1px solid #a00622;
 }
+#testimoniales h3{
+	color: #a00622;
+	font-size: 20px; 
+}
+#testimoniales .textwidget{
+	font-size: 20px;
+	line-height: 34px;
+	color: #767676;
+	background-image: url(img/svg_comilla.svg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 86px;
+	font-style: italic;
+}
+#testimoniales .textwidget span{
+	display: block; /* para que tenga su propio espacio */
+	text-align: right;
+	font-style: normal;
+}
 
 /* ESTILOS FOOTER */
 footer nav{

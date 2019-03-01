@@ -15,6 +15,19 @@ register_nav_menus( array(
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'destacada', 1100, 418, true ); //true para recortar la imagen
 
+/* ACTIVAR WIDGET EN WP-ADMIN*/
+function turismo_widgets(){
+	register_sidebar( array(
+		'name' => __('Blog Sidebar'),
+		'id' => 'sidebar-2',
+		'description' => 'Widgets de Testimoniales',
+		'before_widget' => '<aside id="%1$s" class="%2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>'
+	) );
+}
+add_action( 'widgets_init', 'turismo_widgets' );
 
 //quitar el margin-top de la barra de menu en el frontend al loguear en wp-admin
 add_filter( 'show_admin_bar', '__return_false' );
