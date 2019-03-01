@@ -35,7 +35,7 @@ header .logo{
 	float: left;
 }
 header nav{
-	width: 387px;
+	/* width: 387px; */
 	float: right;
 	margin-top: 30px;
 }
