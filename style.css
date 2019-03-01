@@ -35,7 +35,7 @@ header .logo{
 	float: left;
 }
 header nav{
-	width: 500px;
+	width: 387px;
 	float: right;
 	margin-top: 30px;
 }
@@ -44,7 +44,11 @@ header nav ul{
 }
 header nav ul li{
 	display: inline;
-	margin-right: 20px;
+	margin-left: 20px;
+}
+header nav ul li.current_page_item{
+	border-bottom: 2px solid #fff;
+	padding-bottom: 5px;
 }
 header nav ul li a{
 	color: #ffffff;
