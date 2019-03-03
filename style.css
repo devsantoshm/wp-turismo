@@ -197,6 +197,11 @@ p.fecha{
 	font-weight: bold;
 }
 
+/* TEMPLATE CONSEJOS */
+h2.consejos{
+	font-size: 16px;
+	color: #a00622;
+}
 /* ESTILOS FOOTER */
 footer nav{
 	float: left;
