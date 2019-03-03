@@ -180,6 +180,23 @@ p.fecha{
 	text-align: right;
 }
 
+/* SINGLE POST ENTRADA */
+.single .publicacion{
+	background-color: #ebebeb;
+	padding: 5px;
+	font-size: 14px;
+}
+.single .publicacion .columna{
+	float: left;
+	width: 33%;
+}
+.single .publicacion a,
+.single .publicacion span{
+	color: #a00622;
+	text-decoration: none;
+	font-weight: bold;
+}
+
 /* ESTILOS FOOTER */
 footer nav{
 	float: left;

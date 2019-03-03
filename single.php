@@ -13,7 +13,17 @@
 	<?php endif; ?>
 
 	<div id="primary" class="primary">
-		<?php the_content(); ?>	
+		<div class="publicacion">
+			<div class="columna"><?php the_tags(__('Etiquetas en este post:'), ', ', '<br>'); ?></div>
+			<div class="columna"><?php _e( 'Categorizado en: ' ); the_category(', '); ?><br></div>
+			<div class="columna"><?php _e('Escrito por: '); ?> <span><?php the_author(); ?></span></div>
+			<div class="clear"></div>
+		</div>
+		<article id="post-<?php the_ID(); //poner diferente id en cada entrada?>" <?php post_class(); ?>>
+			<?php the_content(); ?>
+			<?php comments_template(); ?>
+		</article>
+		<?php edit_post_link(); ?>	
 	</div>
 
 <?php endwhile; ?>
