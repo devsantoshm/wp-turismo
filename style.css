@@ -202,6 +202,48 @@ h2.consejos{
 	font-size: 16px;
 	color: #a00622;
 }
+
+/* TEMPLATE CONTACTO */
+.post-18 h3{
+	text-align: center;
+	font-size: 20px;
+	color: #a00622;
+}
+.post-18 .wpcf7{
+	background-color: #f2f2f2;
+	padding: 40px;
+	width: 60%;
+	border-radius: 18px;
+	margin: 0 auto;
+	-webkit-box-shadow: 00px 20px 20px 00px rgba(0,0,0,.3);
+	box-shadow: 00px 20px 20px 00px rgba(0,0,0,.3);
+}
+.post-18 .wpcf7 p{
+	font-size: 14px;
+	font-weight: bold;
+	color: #a00622;
+	margin-bottom: 15px;
+}
+.post-18 .wpcf7 input,
+.post-18 .wpcf7 textarea{
+	height: 32px;
+	border: 1px solid #888;
+	border-radius: 8px;
+	width: 100%;
+}
+.post-18 .wpcf7 textarea{
+	height: 200px;
+}
+.post-18 .wpcf7 input[type="submit"]{
+	background-color: #a00622;
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 5px;
+	width: auto;
+	padding: 0 20px;
+}
+
 /* ESTILOS FOOTER */
 footer nav{
 	float: left;
