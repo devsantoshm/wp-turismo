@@ -244,6 +244,32 @@ h2.consejos{
 	padding: 0 20px;
 }
 
+/* FRONT PAGE */
+#queVisitar{
+
+}
+#queVisitar .widget-title{
+	display: none;
+}
+#queVisitar .widget_sp_image{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+#queVisitar .widget_sp_image .widget_sp_image-description{
+	padding: 0 40px;
+}
+#queVisitar .widget_sp_image p{
+	text-align: center;
+	background-color: #a00622;
+	border-radius: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	padding-top: 2px;
+	padding-bottom: 3px;
+}
+
 /* ESTILOS FOOTER */
 footer nav{
 	float: left;
