@@ -199,7 +199,6 @@ p.fecha{
 
 /* TEMPLATE CONSEJOS */
 h2.consejos{
-	font-size: 16px;
 	color: #a00622;
 }
 
@@ -268,6 +267,26 @@ h2.consejos{
 	color: #fff;
 	padding-top: 2px;
 	padding-bottom: 3px;
+}
+.consejoContenido h3{
+	color: #a00622;
+}
+#informacionConsejos div.informacion{
+	width: 350px;
+	margin-right: 20px;
+	float: left;
+}
+#informacionConsejos div.consejos{
+	width: 720px;
+	float: left;
+}
+#informacionConsejos div.consejos a{
+	text-decoration: none;
+}
+#informacionConsejos div.consejos .consejoContenido{
+	width: 350px;
+	margin-right: 10px;
+	float: right;
 }
 
 /* ESTILOS FOOTER */
