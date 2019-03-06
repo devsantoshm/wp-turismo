@@ -1,5 +1,22 @@
 <?php get_header(); ?>
-
+<div id="slider">
+	<ul class="bxslider">
+		<?php $args = array(
+			'posts_per_page' => 4,
+			'orderby' => 'date',
+			'order' => 'DESC',
+			'post_type' => 'post'
+		); ?>
+		<?php $slider = new WP_Query($args); ?>
+		<?php while($slider->have_posts()): $slider->the_post();//con the_post accedemos a los métodos?>
+			<li>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail('destacada'); ?>
+				</a>
+			</li>
+		<?php endwhile; wp_reset_postdata(); //para que continue con el otro loop ?>
+	</ul>
+</div>
 <div id="queVisitar">
 	<?php dynamic_sidebar('front-page'); ?>
 </div>

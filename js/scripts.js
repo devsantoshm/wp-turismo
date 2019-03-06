@@ -1,3 +1,6 @@
 (function($){
-	alert('ddf')
+	$('.bxslider').bxSlider({
+		auto: true,
+		mode: 'fade'
+	})
 }) (jQuery);
