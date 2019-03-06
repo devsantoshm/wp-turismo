@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<title>Document</title>
+	<title><?php wp_title(''); ?> <?php if(wp_title('', false)) {echo ' : ';} ?> <?php bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
 </head>
 <!-- no va a dar un body difetente en cada página web, para agregar estilos diferentes -->
