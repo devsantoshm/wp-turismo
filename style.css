@@ -301,6 +301,20 @@ h2.consejos{
 	float: right;
 }
 
+/* TEMPLATE CATEGORY */
+a.more-link{
+	background-color: #a00622;
+	color: #fff;
+	padding: 10px 20px;
+	font-weight: bold;
+	text-decoration: none;
+	float: right;
+	border-radius: 10px;
+}
+h1.categoria{
+	color: #a00622;
+}
+
 /* ESTILOS FOOTER */
 footer nav{
 	float: left;
