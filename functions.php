@@ -2,7 +2,12 @@
 
 function turismo_scripts(){
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css' );
+	wp_enqueue_style( 'bxslider', get_template_directory_uri() . '/css/jquery.bxslider.min.css' );
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'jquery'); //cargar el jquery de wordpress
+	wp_enqueue_script( 'bxsliderjs', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array('jquery'), '4.0', true );//el array para que cargue después de jquery y el true para que cargue en el footer
+	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0', true );	
 }
 add_action( 'wp_enqueue_scripts', 'turismo_scripts' );
 
